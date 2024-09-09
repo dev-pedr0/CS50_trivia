@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>
+                    What is the approximate ratio of people to sheep in New Zealand?
+                </h3>
+                <button onclick="showAnswer()">6 people per 1 sheep</button>
+                <button onclick="showAnswer()">3 people per 1 sheep</button>
+                <button onclick="showAnswer()">1 person per 1 sheep</button>
+                <button onclick="showAnswer()">1 person per 3 sheep</button>
+                <button onclick="showAnswer()">1 person per 6 sheep</button>
+                <div class="anwser" id="anwser">
+                    <span class="wrong">Incorreto</span>
+                    <span class="wrong">Incorreto</span>
+                    <span class="wrong">Incorreto</span>
+                    <span class="wrong">Incorreto</span>
+                    <span class="right">Correto</span>
+                </div>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In which country is illegal to own only one Guinea Pig, as a lone Guinea Pig might get lonely?</h3>
+                <form>
+                    <input type="text" id="text-anwser" name="text-anwser">
+                    <button onclick="checkAnwser()" id="result">Check Answer</button>
+                </form>
+                <!-- TODO: Add free response question here -->
+                <script src="script.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
